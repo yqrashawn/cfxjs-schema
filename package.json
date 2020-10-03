@@ -1,28 +1,16 @@
 {
   "name": "cfxjs-schema",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A complete Ethereum RPC specification as a JSON object export.",
   "main": "src/schema.json",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "scripts": {
-  },
+  "files": ["dist", "src"],
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/yqrashawn/cfxjs-schema.git"
   },
-  "keywords": [
-    "ethereum",
-    "json",
-    "rpc",
-    "specification",
-    "complete"
-  ],
-  "authors": [
-    "yqrashawn <namy.19@gmail.com>"
-  ],
+  "keywords": ["ethereum", "json", "rpc", "specification", "complete"],
+  "authors": ["yqrashawn <namy.19@gmail.com>"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yqrashawn/cfxjs-schema/issues"

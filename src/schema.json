@@ -20,6 +20,7 @@
     "eth_getTransactionCount": [["D20", "Q|T"], "Q", 1, 2],
     "eth_getBlockTransactionCountByHash": [["D32"], "Q", 1],
     "eth_getBlockTransactionCountByNumber": [["Q|T"], "Q", 1],
+    "eth_getConfirmationRiskByHash": [["D32"], "Q"],
     "eth_getUncleCountByBlockHash": [["D32"], "Q", 1],
     "eth_getUncleCountByBlockNumber": [["Q"], "Q", 1],
     "eth_getCode": [["D20", "Q|T"], "D", 1, 2],
@@ -28,8 +29,16 @@
     "eth_sendTransaction": [["SendTransaction"], "D", 1],
     "eth_sendRawTransaction": [["D"], "D32", 1],
     "eth_call": [["CallTransaction", "Q|T"], "D", 1, 2],
-    "eth_estimateGas": [["EstimateTransaction", "Q|T"], "EstimateGasAndCollateralResult", 1],
-    "eth_checkBalanceAgainstTransaction": [["D20", "D20", "Q", "Q", "Q"], "CheckBalanceAgainstTransactionResult", 1],
+    "eth_estimateGas": [
+      ["EstimateTransaction", "Q|T"],
+      "EstimateGasAndCollateralResult",
+      1
+    ],
+    "eth_checkBalanceAgainstTransaction": [
+      ["D20", "D20", "Q", "Q", "Q"],
+      "CheckBalanceAgainstTransactionResult",
+      1
+    ],
     "eth_getBlockByHash": [["D32", "B"], "Block", 2],
     "eth_getBlockByNumber": [["Q|T", "B"], "Block", 2],
     "eth_getTransactionByHash": [["D32"], "Transaction", 1],
