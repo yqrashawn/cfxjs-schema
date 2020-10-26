@@ -8,6 +8,7 @@
     "personal_sign": [["D", "D20", "S"], "D", 2],
     "personal_ecRecover": [["D", "D"], "D20", 2],
     "eth_protocolVersion": [[], "S"],
+    "eth_getStatus": [[], "ChainStatus"],
     "eth_syncing": [[], "B|EthSyncing"],
     "eth_coinbase": [[], "D20"],
     "eth_mining": [[], "B"],
@@ -20,7 +21,7 @@
     "eth_getTransactionCount": [["D20", "Q|T"], "Q", 1, 2],
     "eth_getBlockTransactionCountByHash": [["D32"], "Q", 1],
     "eth_getBlockTransactionCountByNumber": [["Q|T"], "Q", 1],
-    "eth_getConfirmationRiskByHash": [["D32"], "Q"],
+    "eth_getConfirmationRiskByHash": [["D32"], "D"],
     "eth_getUncleCountByBlockHash": [["D32"], "Q", 1],
     "eth_getUncleCountByBlockNumber": [["Q"], "Q", 1],
     "eth_getCode": [["D20", "Q|T"], "D", 1, 2],
@@ -83,6 +84,13 @@
       "startingBlock": "Q",
       "currentBlock": "Q",
       "highestBlock": "Q"
+    },
+    "ChainStatus": {
+      "bestHash": "D32",
+      "blockNumber": "D",
+      "chainId": "D",
+      "epochNumber": "D",
+      "pendingTxNumber": "D"
     },
     "SendTransaction": {
       "__required": ["from", "data"],
